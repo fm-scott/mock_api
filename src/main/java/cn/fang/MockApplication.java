@@ -32,6 +32,7 @@ public class MockApplication {
                 "swagger-ui: \thttp://" + ip + ":" + port + path + "/swagger-ui.html\n\t" +
                 "Doc: \t\thttp://" + ip + ":" + port + path + "/doc.html\n" +
                 "----------------------------------------------------------");
+        //end
 	}
 	
 	
