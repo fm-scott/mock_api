@@ -15,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
-@MapperScan(basePackages = { "cn.sccl.app.common.persistence.dao"})
+@MapperScan(basePackages = { "cn.fang.app.common.persistence.dao"})
 public class MockApplication {
 	public static void main(String[] args) throws UnknownHostException {
 //		SpringApplication.run(GzspApplication.class, args);
@@ -32,7 +32,7 @@ public class MockApplication {
                 "swagger-ui: \thttp://" + ip + ":" + port + path + "/swagger-ui.html\n\t" +
                 "Doc: \t\thttp://" + ip + ":" + port + path + "/doc.html\n" +
                 "----------------------------------------------------------");
-        //end
+        //end-to
 	}
 	
 	

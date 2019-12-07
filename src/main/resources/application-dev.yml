@@ -1,7 +1,7 @@
 server:
   port: 8009
   servlet:
-    context-path: /gzsp_api
+    context-path: /mock_api
 light-security:
   # 权限规则配置：表示用{http-method}方法请求的{path}路径必须具备什么{expression}
   spec-list:
@@ -39,8 +39,8 @@ light-security:
 
 
 mybatis-plus:
-  mapper-locations: classpath*:cn/sccl/app/common/persistence/dao/mapping/*.xml
-  typeAliasesPackage: cn.sccl.app.common.persistence.model
+  mapper-locations: classpath*:cn/fang/app/common/persistence/dao/mapping/*.xml
+  typeAliasesPackage: cn.fang.app.common.persistence.model
   global-config:
     banner: false
     db-config:
@@ -67,10 +67,10 @@ spring:
     #driver-class-name: com.mysql.jdbc.Driver
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
     #driverClassName: com.mysql.cj.jdbc.Driver
-    username: zhcg
-    password: zhcg_SCCL_2020
-    #url: jdbc:p6spy:mysql://localhost:3306/ruoyi?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
-    url: jdbc:p6spy:mysql://10.206.20.205/gzsp?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    username: root
+    password:
+    url: jdbc:p6spy:mysql://localhost:3306/ruoyi?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+#    url: jdbc:p6spy:mysql://10.206.20.205/gzsp?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     type: com.alibaba.druid.pool.DruidDataSource   #这里是配置druid连接池，以下都是druid的配置信息
     druid:
       # 初始连接数
