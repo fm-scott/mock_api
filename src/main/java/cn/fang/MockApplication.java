@@ -18,15 +18,14 @@ import lombok.extern.slf4j.Slf4j;
 @MapperScan(basePackages = { "cn.fang.app.common.persistence.dao"})
 public class MockApplication {
 	public static void main(String[] args) throws UnknownHostException {
-//		SpringApplication.run(GzspApplication.class, args);
-		
+
         ConfigurableApplicationContext application = SpringApplication.run(MockApplication.class, args);
         Environment env = application.getEnvironment();
         String ip = InetAddress.getLocalHost().getHostAddress();
         String port = env.getProperty("server.port");
         String path = env.getProperty("server.servlet.context-path");
         log.info("\n----------------------------------------------------------\n\t" +
-                "Application gzsp_api is running! Access URLs:\n\t" +
+                "Application mock_api is running! Access URLs:\n\t" +
                 "Local: \t\thttp://localhost:" + port + path + "/\n\t" +
                 "External: \thttp://" + ip + ":" + port + path + "/\n\t" +
                 "swagger-ui: \thttp://" + ip + ":" + port + path + "/swagger-ui.html\n\t" +

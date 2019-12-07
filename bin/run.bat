@@ -1,15 +1,15 @@
 
 @echo off
 
-echo [ÐÅÏ¢] ÔËÐÐWeb¹¤³Ì¡£
+echo [ï¿½ï¿½Ï¢] ï¿½ï¿½ï¿½ï¿½Webï¿½ï¿½ï¿½Ì¡ï¿½
 echo.
 
 cd %~dp0/..
-cd ../gzsp_api/target
+cd ../mock_api/target
 
 set JAVA_OPTS=-Xms256m -Xmx1024m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=512m
 
-java -jar %JAVA_OPTS% gzsp_api.jar
+java -jar %JAVA_OPTS% mock_api.jar
 
 cd bin
 pause

@@ -70,7 +70,7 @@ spring:
     username: root
     password:
     url: jdbc:p6spy:mysql://localhost:3306/ruoyi?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
-#    url: jdbc:p6spy:mysql://10.206.20.205/gzsp?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+#    url: jdbc:p6spy:mysql://10.206.20.205/mock?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     type: com.alibaba.druid.pool.DruidDataSource   #这里是配置druid连接池，以下都是druid的配置信息
     druid:
       # 初始连接数
