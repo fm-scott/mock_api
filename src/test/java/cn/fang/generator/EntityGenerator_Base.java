@@ -1,11 +1,6 @@
 package cn.fang.generator;
 
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.junit.Test;
-
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
@@ -16,11 +11,15 @@ import com.baomidou.mybatisplus.generator.config.converts.MySqlTypeConvert;
 import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
 import com.baomidou.mybatisplus.generator.config.rules.DbType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
+import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 自动生成
  */
-public class EntityGenerator_Base{
+public class EntityGenerator_Base {
 
     @Test
     public void entityGenerator() {
