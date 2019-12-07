@@ -63,12 +63,12 @@ public class EntityGenerator {
         // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setParent(null);
-        pc.setEntity("cn.sccl.app.common.persistence.model");
-        pc.setMapper("cn.sccl.app.common.persistence.dao");
-        pc.setXml("cn.sccl.app.common.persistence.dao.mapping");
-        pc.setService("cn.sccl.app.modular.gzsp.service");       //本项目没用，生成之后删掉
-        pc.setServiceImpl("cn.sccl.app.modular.gzsp.service.impl");   //本项目没用，生成之后删掉
-        pc.setController("cn.sccl.app.modular.gzsp.controller");    //本项目没用，生成之后删掉
+        pc.setEntity("cn.fang.app.common.persistence.model");
+        pc.setMapper("cn.fang.app.common.persistence.dao");
+        pc.setXml("cn.fang.app.common.persistence.dao.mapping");
+        pc.setService("cn.fang.app.modular.gzsp.service");       //本项目没用，生成之后删掉
+        pc.setServiceImpl("cn.fang.app.modular.gzsp.service.impl");   //本项目没用，生成之后删掉
+        pc.setController("cn.fang.app.modular.gzsp.controller");    //本项目没用，生成之后删掉
         mpg.setPackageInfo(pc);
 
         // 注入自定义配置，可以在 VM 中使用 cfg.abc 设置的值

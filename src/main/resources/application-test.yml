@@ -39,8 +39,8 @@ light-security:
 
 
 mybatis-plus:
-  mapper-locations: classpath*:cn/sccl/app/common/persistence/dao/mapping/*.xml
-  typeAliasesPackage: cn.sccl.app.common.persistence.model
+  mapper-locations: classpath*:cn/fang/app/common/persistence/dao/mapping/*.xml
+  typeAliasesPackage: cn.fang.app.common.persistence.model
   global-config:
     banner: false
     db-config:
@@ -68,7 +68,7 @@ spring:
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
     #driverClassName: com.mysql.cj.jdbc.Driver
     username: zhcg
-    password: zhcg_SCCL_2020
+    password: zhcg_fang_2020
     #url: jdbc:p6spy:mysql://localhost:3306/ruoyi?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     url: jdbc:p6spy:mysql://10.206.20.205/gzsp?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     type: com.alibaba.druid.pool.DruidDataSource   #这里是配置druid连接池，以下都是druid的配置信息
@@ -149,7 +149,7 @@ spring:
 logging:
   config: classpath:logback/logback-test.xml
   level:
-    cn.sccl.app.modular: debug
+    cn.fang.app.modular: debug
 file:
   root: /home/cqsp/temp
 

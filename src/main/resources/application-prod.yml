@@ -40,8 +40,8 @@ light-security:
 
 
 mybatis-plus:
-  mapper-locations: classpath*:cn/sccl/app/common/persistence/dao/mapping/*.xml
-  typeAliasesPackage: cn.sccl.app.common.persistence.model
+  mapper-locations: classpath*:cn/fang/app/common/persistence/dao/mapping/*.xml
+  typeAliasesPackage: cn.fang.app.common.persistence.model
   global-config:
     banner: false
     db-config:
@@ -150,7 +150,7 @@ spring:
 logging:
   config: classpath:logback/logback-prod.xml
   level:
-    cn.sccl.app.modular: debug
+    cn.fang.app.modular: debug
 file:
   root: /apps/gzspfile/temp
 

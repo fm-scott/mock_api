@@ -1,4 +1,4 @@
-//package cn.sccl.app.common.config;
+//package cn.fang.app.common.config;
 //
 //import com.fasterxml.jackson.annotation.JsonAutoDetect;
 //import com.fasterxml.jackson.annotation.PropertyAccessor;

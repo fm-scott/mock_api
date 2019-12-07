@@ -149,6 +149,6 @@ spring:
 logging:
   config: classpath:logback/logback-dev.xml
   level:
-    cn.sccl.app.modular: debug
+    cn.fang.app.modular: debug
 file:
   root: D:/temp
