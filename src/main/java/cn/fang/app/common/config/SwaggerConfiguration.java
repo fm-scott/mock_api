@@ -31,8 +31,8 @@ public class SwaggerConfiguration {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("贵州智慧采购API")
-                .description("贵州智慧采购系统-实物台账系统API")
+                .title("mock_API")
+                .description("mock_API")
                 .termsOfServiceUrl("http://localhost:8009/")
                 .version("1.0")
                 .build();

@@ -1,23 +1,29 @@
 package cn.fang;
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
+import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.Environment;
-import lombok.extern.slf4j.Slf4j;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 /**
  * @author
  */
 @Slf4j
-@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
-@MapperScan(basePackages = { "cn.fang.app.common.persistence.dao"})
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@MapperScan(basePackages = {"cn.fang.app.common.persistence.dao"})
 public class MockApplication {
-	public static void main(String[] args) throws UnknownHostException {
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    public static void main(String[] args) throws UnknownHostException {
 
         ConfigurableApplicationContext application = SpringApplication.run(MockApplication.class, args);
         Environment env = application.getEnvironment();
@@ -32,9 +38,8 @@ public class MockApplication {
                 "Doc: \t\thttp://" + ip + ":" + port + path + "/doc.html\n" +
                 "----------------------------------------------------------");
         //end-to
-	}
-	
-	
-	
+    }
+
+
 
 }
