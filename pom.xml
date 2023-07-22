@@ -48,7 +48,7 @@
 		<ehcache.core.version>2.6.11</ehcache.core.version>
 		<mysql-connector-java.version>8.0.11</mysql-connector-java.version>
 		<jwt.version>0.9.0</jwt.version>
-		<hutool.version>4.1.1</hutool.version>
+		<hutool.version>5.8.12</hutool.version>
 		<org.mapstruct.version>1.2.0.Final</org.mapstruct.version>
 		<m2e.apt.activation>jdt_apt</m2e.apt.activation>
 		<project.build.directory>D:/work/workspace4/mock_api</project.build.directory>
@@ -225,7 +225,7 @@
 		<dependency>
 			<groupId>cn.hutool</groupId>
 			<artifactId>hutool-all</artifactId>
-			<version>4.6.7</version>
+			<version>5.8.12</version>
 		</dependency>
 
 
